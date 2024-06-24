@@ -153,14 +153,14 @@ if not BLACKLIST_CHAT:
                     -1001692751821, -1001459812644, -1001812143750, -1001599474353, -1001876092598, -1001861414061]
 
 # Telegram App KEY and HASH
-API_KEY = int(os.environ.get("API_KEY") or None)
+API_KEY = int(os.environ.get("API_KEY") or 0)
 API_HASH = str(os.environ.get("API_HASH") or None)
 
 # Userbot Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "0"))
 
 # Load or No Load modules
 LOAD = os.environ.get("LOAD", "").split()
