@@ -153,14 +153,14 @@ if not BLACKLIST_CHAT:
                     -1001692751821, -1001459812644, -1001812143750, -1001599474353, -1001876092598, -1001861414061]
 
 # Telegram App KEY and HASH
-API_KEY = int(os.environ.get("API_KEY") or 23798782)
-API_HASH = str(os.environ.get("API_HASH") or "8fa84b8e6a795fb95cc1179e2fdea69c")
+API_KEY = int(os.environ.get("API_KEY") or None)
+API_HASH = str(os.environ.get("API_HASH") or None)
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOIgBu6csHOhdiDBxovHg8XLf0h8hsFX8VP0Vl-1GCpwgk_qCzWam4NsKQM0nYxwkoDQj0n0K1TBtTmahT_YbQzSULIXWzMYKFhYimd68ht5LelLJR_RVksfzvjw0Mqm0Q_hBQKYjWT9jzjhaWOUCawB8uuGGxIaaDks2SoZ9OA_Vvxn91KbIILWs6t8SEXlOBLGkHdcYNpMKsnz2qIBDSFzA7c-CwHTmq3x0sKYAuuix8Losk9jo8UjkZJs-XvFREJBkjNc1weUxmLST6Urqw_BtoZ89yOtHID8MvkgDqpXOSrtqqVfqBPwU8j2Ao73dxg7qE1Ak-pgFDmePiMXMWOANKmY=")
+STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "-4231117404"))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
 
 # Load or No Load modules
 LOAD = os.environ.get("LOAD", "").split()
@@ -196,7 +196,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # SQL Database URI
-DB_URI = os.environ.get("DATABASE_URL", "postgresql://postgres:Mvpapep23@localhost:5432/whyme")
+DB_URI = os.environ.get("DATABASE_URL", None)
 
 # OCR API key
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
@@ -296,7 +296,7 @@ DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
 DEEP_AI = os.environ.get("DEEP_AI", None)
 
 # Inline bot helper
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7241462132:AAH47BRbIEE2AOFXtQCsVsObmqo1ZewTXYE")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
 BOT_USERNAME = os.environ.get("BOT_USERNAME", None)
 
 # Jangan di hapus Nanti ERROR

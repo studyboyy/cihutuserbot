@@ -1,5 +1,5 @@
 FROM python:3.10
-RUN git clone -b main https://github.com/studyboyy/cihutubot.git /home/Kazuuserbot/ \
+RUN git clone -b main https://github.com/studyboyy/cihutuserbot.git /home/Kazuuserbot/ \
     && chmod 777 /home/Kazuuserbot \
     && mkdir /home/Kazuuserbot/bin/
 
