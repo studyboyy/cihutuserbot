@@ -58,8 +58,8 @@ async def autopilot():
     try:
         r = await bot(
             CreateChannelRequest(
-                title="ʏᴇᴘᴘᴏ ᴜꜱᴇʀʙᴏᴛ Lᴏɢs",
-                about="» Group log Created by: ʏᴇᴘᴘᴏ ᴜꜱᴇʀʙᴏᴛ\n\n» Support : @YeppoStore\n» Support: @validP",
+                title="ɪᴄʜɪʜᴏᴏᴅ ᴜꜱᴇʀʙᴏᴛ Lᴏɢs",
+                about="» Group log Created by: ɪᴄʜɪʜᴏᴏᴅ ᴜꜱᴇʀʙᴏᴛ\n\n» Support : @YeppoStore\n» Support: @ICHiHOOD\n» Support: @nextavent ",
                 megagroup=True,
             ),
         )
@@ -77,7 +77,7 @@ async def autopilot():
     channel = get_peer_id(chat)
     if isinstance(chat.photo, ChatPhotoEmpty):
         photo = await download_file(
-            "https://telegra.ph/file/21d4d70e68fefa6a7e6e9.jpg", "photoyins.jpg"
+            "https://telegra.ph/file/a608d86d95b23991edade.jpg", "ichihood.jpg"
         )
         ll = await bot.upload_file(photo)
         try:
@@ -106,7 +106,7 @@ async def autobot():
     if who.username:
         username = f"{who.username}_bot"
     else:
-        username = f"ʏᴇᴘᴘᴏ{(str(who.id))[5:]}ʙᴏᴛ"
+        username = f"ɪᴄʜɪʜᴏᴏᴅ{(str(who.id))[5:]}ʙᴏᴛ"
     bf = "@BotFather"
     await bot(UnblockRequest(bf))
     await bot.send_message(bf, "/cancel")
@@ -136,7 +136,7 @@ async def autobot():
     filogo = random.choice(
         [
             "https://telegra.ph/file/a608d86d95b23991edade.jpg",
-            "YeppoBot/resources/logo.jpg",
+            "YeppoBot/resources/ichihood.jpg",
         ]
     )
     await bot.send_message(bf, username)

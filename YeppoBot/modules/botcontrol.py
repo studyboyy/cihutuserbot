@@ -161,7 +161,7 @@ async def users(event):
                 event.chat_id,
                 fileuser,
                 force_document=True,
-                thumb="YeppoBot/resources/logo.jpg",
+                thumb="YeppoBot/resources/ichihood.jpg",
                 caption="**Total Pengguna Di Bot anda.**",
                 allow_cache=False,
                 buttons=[
@@ -179,7 +179,7 @@ async def botsettings(event):
     if event.query.user_id == OWNER_ID:
         await tgbot.send_message(
             event.chat_id,
-            file="https://telegra.ph/file/0508886303b1d51ba9dc9.jpg",
+            file="https://telegra.ph/file/a608d86d95b23991edade.jpg",
             message=f"**Halo [{OWNER}](tg://user?id={OWNER_ID})**\n**Apa ada yang bisa saya bantu?**",
             buttons=[
                 # (Button.inline("sᴇᴛᴛɪɴɢs ᴠᴀʀ", data="apiset"),),

@@ -175,7 +175,9 @@ CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 
 # Support
-GROUP = os.environ.get("GROUP", "kazusupportgrp")
+GROUP = os.environ.get("GROUP", "ICHiHOOD")
+GROUP2 = os.environ.get("GROUP", "YeppoStore")
+GROUP2 = os.environ.get("GROUP", "nextavent")
 CHANNEL = os.environ.get("CHANNEL", "ICHiHOOD")
 
 # Heroku Credentials for updater.
@@ -220,7 +222,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # untuk perintah teks costum .alive
 ALIVE_TEKS_CUSTOM = os.environ.get(
     "ALIVE_TEKS_CUSTOM",
-    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 𝙺𝙰𝚉𝚄 𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
+    "𝙷𝙴𝚈, 𝚂𝙰𝚈𝙰 𝙿𝙴𝙽𝙶𝙶𝚄𝙽𝙰 ɪᴄʜɪʜᴏᴏᴅ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃")
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", " ICHIHOOD USERBOT")
@@ -252,17 +254,17 @@ BOT_VER = os.environ.get("BOT_VER", "3.6.9")
 
 # Default .alive logo
 ALIVE_LOGO = (os.environ.get("ALIVE_LOGO")
-              or "https://telegra.ph/file/4a7e1523892f591dd7158.jpg")
+              or "https://telegra.ph/file/a608d86d95b23991edade.jpg")
 
 INLINE_PIC = (os.environ.get("INLINE_PIC")
-              or "https://telegra.ph/file/762510fa43ef987980d55.jpg")
+              or "https://telegra.ph/file/a608d86d95b23991edade.jpg")
 
 # Picture For VCPLUGIN
 PLAY_PIC = (os.environ.get("PLAY_PIC")
             or ".png")
 
 QUEUE_PIC = (os.environ.get("QUEUE_PIC")
-             or "https://telegra.ph/file/4a7e1523892f591dd7158.jpg")
+             or "https://telegra.ph/file/a608d86d95b23991edade.jpg")
 
 DEFAULT = list(map(int, b64decode("NTA2MzA2MjQ5Mw==").split()))
 
@@ -366,7 +368,7 @@ else:
 
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**ɪᴄʜɪʜᴏᴅ ᴜꜱᴇʀʙᴏᴛ v`{BOT_VER}` is back up and running!**\n\n"
+        f"**ɪᴄʜɪʜᴏoᴅ ᴜꜱᴇʀʙᴏᴛ v`{BOT_VER}` is back up and running!**\n\n"
         f"**Telethon:** `{vsc}`\n"
         f"**Python:** `{python_version()}`\n"
     )
@@ -465,10 +467,7 @@ with bot:
         logo = ALIVE_LOGO
         logoyins = random.choice(
                 [
-                    "https://telegra.ph/file/762510fa43ef987980d55.jpg",
-                    "https://telegra.ph/file/4a7e1523892f591dd7158.jpg",
-                    "https://telegra.ph/file/f0383ed4de3a719e2eada.jpg",
-                    "https://telegra.ph/file/d8d834c69efa4c413d126.jpg",
+                    "https://telegra.ph/file/a608d86d95b23991edade.jpg",
                 ]
         )
         cmd = CMD_HANDLER

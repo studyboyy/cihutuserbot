@@ -24,7 +24,6 @@ MSG_ON = """
 ╭╼┅━━━━━╍━━━━━┅╾
 ├▹ ʏᴇᴘᴘᴏ ᴜꜱᴇʀʙᴏᴛ Vᴇʀsɪᴏɴ - {} •[{}]•
 ├▹ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 Vᴇʀsɪᴏɴ - {}
-├▹ @disinikazu-Userbot
 ├▹ Kᴇᴛɪᴋ .alive Uɴᴛᴜᴋ Mᴇɴɢᴇᴄᴇᴋ Bᴏᴛ
 ╰╼┅━━━━━╍━━━━━┅╾
 """
@@ -52,7 +51,7 @@ async def yeppo_userbot_on():
         if bot and tgbot:
             yeppoUBOT = await tgbot.get_me()
             BOT_USERNAME = yeppoUBOT.username
-            await bot(EditAdminRequest(BOTLOG_CHATID, BOT_USERNAME, new_rights, "ʏᴇᴘᴘᴏ ᴜꜱᴇʀʙᴏᴛ"))
+            await bot(EditAdminRequest(BOTLOG_CHATID, BOT_USERNAME, new_rights, "ɪᴄʜɪʜᴏᴏᴅ ᴜꜱᴇʀʙᴏᴛ"))
             await asyncio.sleep(3)
     except BaseException:
         pass
