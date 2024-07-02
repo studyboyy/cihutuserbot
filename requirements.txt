@@ -1,4 +1,3 @@
-av
 aiofiles
 aiohttp[speedups]
 async_generator
@@ -15,10 +14,11 @@ dnspython
 emoji==1.7.0
 faker
 ffmpeg-python
+ffmpeg
 fontTools
 geopy
 git+https://github.com/1danish-00/carbon-now-sh-api-wrapper.git
-git+https://github.com/buddhhu/img2html.git
+img2html
 yt-dlp
 gitpython
 glitch_this
