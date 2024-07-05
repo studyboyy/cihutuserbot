@@ -1,35 +1,14 @@
 FROM python:3.10
-
-# Install system dependencies
-RUN apt-get update && apt-get install -y \
-    ffmpeg \
-    libavcodec-dev \
-    libavdevice-dev \
-    libavfilter-dev \
-    libavformat-dev \
-    libavutil-dev \
-    libswscale-dev \
-    pkg-config \
-    git \
-    && rm -rf /var/lib/apt/lists/*
-    
-# Clone repository and set permissions
-RUN git clone -b main https://github.com/studyboyy/cihutuserbot.git /home/Kazuuserbot/ \
-    && chmod -R 777 /home/Kazuuserbot \
+RUN git clone -b Kazu-Userbot https://github.com/ionmusic/Kazu-Userbot /home/Kazuuserbot/ \
+    && chmod 777 /home/Kazuuserbot \
     && mkdir /home/Kazuuserbot/bin/
 
-# Copy configuration files
 COPY ./sample_config.env ./config.env* /home/Kazuuserbot/
 
-# Set working directory
 WORKDIR /home/Kazuuserbot/
 
-# Upgrade pip and setuptools
-RUN pip install --upgrade pip setuptools
+RUN pip3 install -U pip
+COPY requirements.txt .
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
-# Install requirements
-# Install requirements except av
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Start the application
-CMD ["bash", "start"]
+CMD ["bash","start"]
