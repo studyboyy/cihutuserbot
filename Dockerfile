@@ -29,7 +29,7 @@ RUN pip install --upgrade pip setuptools
 
 # Install requirements
 # Install requirements except av
-RUN pip install  -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Start the application
 CMD ["bash", "start"]
