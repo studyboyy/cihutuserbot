@@ -7,6 +7,8 @@ COPY ./sample_config.env ./config.env* /home/Kazuuserbot/
 
 WORKDIR /home/Kazuuserbot/
 
+RUN pip install --upgrade pip setuptools
+
 RUN pip install -r requirements.txt
 
 CMD ["bash","start"]
