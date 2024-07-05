@@ -1,4 +1,3 @@
-av
 aiofiles
 aiohttp[speedups]
 async_generator
