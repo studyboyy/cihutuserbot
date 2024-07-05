@@ -29,11 +29,7 @@ RUN pip install --upgrade pip setuptools
 
 # Install requirements
 # Install requirements except av
-RUN pip install --no-cache-dir --upgrade -r requirements.txt || true
-
-# Install av separately
-RUN pip install av
-RUN pip install python-dotenv
+RUN pip install  -r requirements.txt
 
 # Start the application
 CMD ["bash", "start"]
