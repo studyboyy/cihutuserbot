@@ -33,6 +33,7 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt || true
 
 # Install av separately
 RUN pip install av
+RUN pip install python-dotenv
 
 # Start the application
 CMD ["bash", "start"]
