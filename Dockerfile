@@ -9,8 +9,6 @@ RUN apt-get update && apt-get install -y \
     libavformat-dev \
     libavutil-dev \
     libswscale-dev \
-    libavresample-dev \
-    build-essential \
     pkg-config \
     git \
     && rm -rf /var/lib/apt/lists/*
@@ -30,7 +28,11 @@ WORKDIR /home/Kazuuserbot/
 RUN pip install --upgrade pip setuptools
 
 # Install requirements
-RUN pip install -r requirements.txt
+# Install requirements except av
+RUN pip install --no-cache-dir --upgrade -r requirements.txt || true
+
+# Install av separately
+RUN pip install av
 
 # Start the application
 CMD ["bash", "start"]
