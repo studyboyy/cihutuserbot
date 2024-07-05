@@ -40,15 +40,12 @@
       }
     }
   ],  
-  "buildpacks": [
+"buildpacks": [
     {
-      "url": "heroku-community/apt"
+      "url": "heroku/python"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    },
-    {
-      "url": "heroku/python"
     }
   ],
   "formation": {
