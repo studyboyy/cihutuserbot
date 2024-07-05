@@ -1,6 +1,6 @@
 FROM python:3.10
-RUN git clone -b Kazu-Userbot https://github.com/ionmusic/Kazu-Userbot /home/Kazuuserbot/ \
-    && chmod 777 /home/Kazuuserbot \
+RUN git clone -b main https://github.com/studyboyy/cihutuserbot.git /home/Kazuuserbot/ \
+    && chmod -R 777 /home/Kazuuserbot \
     && mkdir /home/Kazuuserbot/bin/
 
 COPY ./sample_config.env ./config.env* /home/Kazuuserbot/
