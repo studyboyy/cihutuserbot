@@ -18,8 +18,7 @@ RUN git clone -b main https://github.com/studyboyy/cihutuserbot.git /home/Kazuus
     && mkdir /home/Kazuuserbot/bin/
 
 # Copy configuration files
-COPY ./sample_config.env /home/Kazuuserbot/
-COPY ./config.env* /home/Kazuuserbot/
+COPY ./sample_config.env ./config.env* /home/Kazuuserbot/
 
 # Set working directory
 WORKDIR /home/Kazuuserbot/
