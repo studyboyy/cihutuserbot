@@ -9,9 +9,12 @@ RUN apt-get update && apt-get install -y \
     libavformat-dev \
     libavutil-dev \
     libswscale-dev \
+    libavresample-dev \
+    build-essential \
+    pkg-config \
     git \
     && rm -rf /var/lib/apt/lists/*
-
+    
 # Clone repository and set permissions
 RUN git clone -b main https://github.com/studyboyy/cihutuserbot.git /home/Kazuuserbot/ \
     && chmod -R 777 /home/Kazuuserbot \
